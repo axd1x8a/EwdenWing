@@ -93,9 +93,9 @@ fn escape_tags(s: &str, tags: &Vec<String>) -> String {
 
 fn wait_for_message_repository() {
     loop {
-        // try to get (dummyText) from Talk Messages
+        // try to get `x` from Menu Text category
         // if MsgRepository is not initialized yet, this will return None
-        if MsgRepository::get_msg(0, 1, 100).is_some() {
+        if MsgRepository::get_msg(0, 200, 1010).is_some() {
             break;
         }
         std::thread::sleep(std::time::Duration::from_millis(100));

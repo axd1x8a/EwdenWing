@@ -3,5 +3,8 @@ profileVersion = "v1"
 [[supports]]
 game = "eldenring"
 
+[[supports]]
+game = "nightreign"
+
 [[natives]]
 path = 'ewden_wing.dll'
