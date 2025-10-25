@@ -1,0 +1,29 @@
+[package]
+name = "ewden_wing"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[dependencies.pmod]
+git = "https://github.com/axd1x8a/pmod.git"
+branch = "feat/message-enumeration"
+version = "0.2.3"
+
+[dependencies.uwuify]
+git = "https://github.com/axd1x8a/uwu.git"
+branch = "fixes"
+version = "0.2.2"
+features = ["ascii-only"]
+default-features = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+codegen-units = 1
+debug = false
+lto = true
+opt-level = "z"
+panic = "abort"
+strip = true
