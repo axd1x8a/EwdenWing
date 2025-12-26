@@ -1,0 +1,7 @@
+profileVersion = "v1"
+
+[[supports]]
+game = "armoredcore6"
+
+[[natives]]
+path = 'ewdenwing.dll'
